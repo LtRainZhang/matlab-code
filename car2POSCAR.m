@@ -1,8 +1,8 @@
 clear all;
-n = 72;  %定义原子个数
+n = 72;  % input atom numbers
 pi = 3.1415926;
 c =num2str(n);
-path = '.\quart-1980 (2).car';%更改坐标文件名
+path = '.\quart-1980 (2).car';% change filename
 fid = fopen(path,'r');
 B = cell2mat(textscan(fid,'%*s %f %f %f %f %f %f %*s',1,'HeaderLines',4));
 A = textscan(fid,'%*s %f %f %f %*s %d %*s %s %*f',n,'HeaderLines',1);
