@@ -1,10 +1,8 @@
 clear all;
 %%%%%%%%%%%%%%%  something you need change
-
 n = 76;  % input atom numbers
 systemname='melt-NaCl';             % enter the name of system
 path = '.\sio2.car';% change filename
-
 %%%%%%%%%%
 pi = 3.1415926;
 c =num2str(n);
@@ -52,7 +50,6 @@ fp = fopen('POSCAR','w');
 fprintf(fp,'SYSTEM %s\r\n',systemname);
 fprintf(fp,'      1.00000000000\r\n');
 fprintf(fp,'      %14.12f        %14.12f       %14.12f\r\n',lattice_vector(1,1),lattice_vector(1,2),lattice_vector(1,3));
-
 fprintf(fp,'      %14.12f        %14.12f       %14.12f\r\n',lattice_vector(2,1),lattice_vector(2,2),lattice_vector(2,3));
 fprintf(fp,'      %14.12f        %14.12f       %14.12f\r\n',lattice_vector(3,1),lattice_vector(3,2),lattice_vector(3,3));
 for s = 1:spe_num(1)
