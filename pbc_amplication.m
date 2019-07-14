@@ -155,7 +155,7 @@ end
 
 function frac_coor = cart2frac(coor_cart,lattice_vector)
 
-    frac_coor = inv(lattice_vector')*coor_cart;   %×¢ÒâÊ¹ÓÃ×ªÖÃ¾ØÕóµÄÄæ¾ØÕó inv(lattice_vector')*coor_cart;
+    frac_coor = inv(lattice_vector')*coor_cart;   %æ³¨æ„ä½¿ç”¨è½¬ç½®çŸ©é˜µçš„é€†çŸ©é˜µ inv(lattice_vector')*coor_cart;
     
 end
 
