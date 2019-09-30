@@ -1,0 +1,5 @@
+matlab ‘eval’ command dont disp in the command line
+
+for i = 1:4
+    eval([strcat('h',num2str(i),'=',num2str(i)),';']);   %增加方括号
+end
