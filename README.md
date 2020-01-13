@@ -1,5 +1,6 @@
 #coding = utf-8
 # matlab-code
+%%%%%%%%%%%一
 用Matlab实现字符串分割（split）
 Posted on 2011/08/08 
 
@@ -22,3 +23,7 @@ S = regexp(str, '\t', 'split')
 S = regexp(str, '\s+', 'split')
 
 这样，S(1)=’Hello’，S(2)=’Nocturne’，S(3)=’Studio’。
+
+%%%%%%%%%%%%%%二
+num2str数字转化为字符串保留小数的方法 :
+num2str(2.10,'%4.2f')>>>其中.2表示小数点保留多少位
